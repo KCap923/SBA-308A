@@ -1,3 +1,27 @@
 body {
   background-color: #222831 !important;
 }
+
+h1 {
+  font-family: "Sedan SC", serif !important;
+  font-size: 80px !important;
+  color: whitesmoke !important;
+  display: flex;
+  justify-content: center !important;
+  margin: 14px !important; 
+  animation: fadeInDown; 
+  animation-timing-function: 8s !important;
+  animation-duration: 3s !important;
+
+
+}
+
+.heading {
+  height: 8rem !important;
+  width: 60rem !important;
+  border: 4px double whitesmoke !important;
+  margin: 120px !important;
+  margin-left: 31rem !important;
+  display: flex !important;
+  justify-content:  center !important;
+}
