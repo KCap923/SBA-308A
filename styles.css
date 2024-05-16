@@ -4,8 +4,9 @@ body {
 
 h1 {
   font-family: "Sedan SC", serif !important;
-  font-size: 80px !important;
-  color: white !important;
+  font-size: 85px !important;
+  color: whitesmoke !important;
+  background-image: linear-gradient(to right, rgb(143, 125, 106, 0), rgb(176, 157, 139, 1), #C8B6A6, rgb(235, 215, 195, 0));
   display: flex;
   justify-content: center !important;
   margin: 100px !important; 
@@ -60,7 +61,7 @@ p {
 
 .next {
 display: block;
-background-color: #212529 !important;
+background-color: #c4b3a3 !important;
 border: none;
 font-family: "Sedan SC", serif !important;
 font-size: 18px;
@@ -70,5 +71,4 @@ padding: 12px 30px !important;
 margin: 40px auto !important;
 border-radius: 3px !important;
 cursor: pointer !important;
-
 }
