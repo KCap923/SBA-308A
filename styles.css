@@ -1,14 +1,14 @@
 body {
-  background-color: #222831 !important;
+  background-color: #B4B4B8 !important;
 }
 
 h1 {
   font-family: "Sedan SC", serif !important;
   font-size: 80px !important;
-  color: whitesmoke !important;
+  color: white !important;
   display: flex;
   justify-content: center !important;
-  margin: 14px !important; 
+  margin: 100px !important; 
   animation: fadeInDown; 
   animation-timing-function: 8s !important;
   animation-duration: 3s !important;
@@ -16,12 +16,59 @@ h1 {
 
 }
 
-.heading {
+/* .heading {
+  background-color: whitesmoke !important;
+  opacity: 65%;
   height: 8rem !important;
   width: 60rem !important;
-  border: 4px double whitesmoke !important;
+  border: 12px double #212529 !important;
   margin: 120px !important;
   margin-left: 31rem !important;
   display: flex !important;
   justify-content:  center !important;
+} */
+
+.main {
+width: 80vmin;
+padding: 50px 40px;
+background-color: whitesmoke !important;
+opacity: 90%;
+position: absolute;
+transform: translate(-50%, -50%);
+top: 50%;
+left: 50%;
+border: 10px solid #212529 !important;
+border-radius: 2px;
+box-shadow: 20px 20px 40px black;
+}
+
+span {
+display: block;
+text-align: center;
+font-size: 100px;
+}
+
+p {
+  font-family: "Sedan", serif;
+  font-size: 30px ;
+  font-size: 20px !important;
+  text-align: center;
+  word-wrap: break-word;
+  line-height: 35px;
+  margin: 30px 0;
+}
+
+.next {
+display: block;
+background-color: #212529 !important;
+border: none;
+font-family: "Sedan SC", serif !important;
+font-size: 18px;
+color: white;
+font-weight: 200;
+padding: 12px 30px !important;
+margin: 40px auto !important;
+border-radius: 3px !important;
+cursor: pointer !important;
+
 }
