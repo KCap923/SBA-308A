@@ -1,5 +1,5 @@
 body {
-  background-color: #B4B4B8 !important;
+  background-color: rgb(218, 214, 216) !important;
 }
 
 h1 {
@@ -13,21 +13,7 @@ h1 {
   animation: fadeInDown; 
   animation-timing-function: 8s !important;
   animation-duration: 3s !important;
-
-
 }
-
-/* .heading {
-  background-color: whitesmoke !important;
-  opacity: 65%;
-  height: 8rem !important;
-  width: 60rem !important;
-  border: 12px double #212529 !important;
-  margin: 120px !important;
-  margin-left: 31rem !important;
-  display: flex !important;
-  justify-content:  center !important;
-} */
 
 .main {
 width: 80vmin;
