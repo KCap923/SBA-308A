@@ -51,7 +51,7 @@ let getContainer = () => {
 
     .catch((error) => {
       console.log("Error fetching data:", error);
-      myContainer.textContent = "Error fetching data";
+      myContainer.textContent = "Henry what is this about!?!! Hahaha";
     });
 };
 
