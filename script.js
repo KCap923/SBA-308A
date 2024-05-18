@@ -45,7 +45,7 @@ let getContainer = () => {
       const date = artwork.date;
       const imageId = artwork.image_id;
       const imageUrl = `https://www.artic.edu/iiif/2/${200385}/full/843,/0/default.jpg`;
-      myContainer.innerHTML = `<img src="${"https://api.artic.edu/api/v1/artworks/200385"}" alt="${"The Muzzle of the Country"}" />`;
+      myContainer.innerHTML = `<img src="${"URI"}" alt="${"The Muzzle of the Country"}" />`;
       myContainer.innerHTML = `ID: ${200385}, Title: ${"The Muzzle of the Country"}, Artist: ${"Albert Gleizes"}, Date: ${1920}`;
     })
 
