@@ -1,8 +1,62 @@
 // alert("Cool chicks Rise UP!!!")
 
+const dropdown = document.getElementById("artist");
+const descriptionContainer = document.getElementById("description")
 
+function populateDropdown(artists) {
+  artists.forEach((artist) => {
+    const option = document.createElement('option');
+    option.textContent = artist.name;
+    option.setAttribute('value', artist.slug);
+    dropdown.appendChild(option);
+  });
+}
 
+async function fetchArtist() {
+  try {
+    const response = await fetch("https://api.artic.edu/api/v1/artworks?page=2&limit=10");
+    const data = await response.json();
+    console.log(data);
+    populateDropdown(data.results);
+  } catch (err) {
+    console.log(err);
+  }
+}
 
+fetchArtist();
+
+dropdown.addEventListener('change', (evt) => {
+  async function getArtistInfo() {
+    try {
+      const response = await fetch(
+        `https://api.artic.edu/api/v1/artworks?fields=id,title,artist_display,date_display,main_reference_number
+        ${evt.target.value}`
+      );
+      const data = await response.json();
+      artistInfo(data.results);
+    } catch (err) {
+      console.log(err);
+    }
+  }
+  getArtistInfo();
+});
+
+function populateDescription(quotes) {
+  descriptionContainer.innerHTML = '';
+
+  if (description.length < 1) {
+    descriptionContainer.textContent = "No description";
+    return;
+  }
+
+  quotes.forEach((description) => {
+    const div = document.createElement('div');
+    const h1 = document.createElement('h1');
+    h1.textContent = description.content;
+    div.appendChild(h1);
+    descriptionContainer.appendChild(div);
+  });
+}
 
 
 

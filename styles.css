@@ -63,3 +63,12 @@ img {
   width: 50px !important;
   height: 50px !important;
 }
+
+.description {
+  display: flex !important;
+  justify-content: center !important;
+  align-content: center !important;
+  width: 40rem;
+  height: 20rem;
+  
+}
