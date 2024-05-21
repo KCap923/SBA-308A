@@ -5,7 +5,7 @@ body {
 h1 {
   font-family: "Sedan SC", serif !important;
   font-size: 85px !important;
-  color: black !important;
+  color: whitesmoke !important;
   background-image: linear-gradient(to right, rgb(143, 125, 106, 0), rgb(176, 157, 139, 1), #C8B6A6, rgb(235, 215, 195, 0));
   display: flex;
   justify-content: center !important;

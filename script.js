@@ -1,5 +1,73 @@
 // alert("Cool chicks Rise UP!!!")
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //
 // Attempt ************************************************************************************************************************
 // function fetchImage() {
@@ -27,32 +95,32 @@
 // const button = document.getElementById("fetch-image-button");
 // button.addEventListener("click", fetchImage);
 
-//Attempt ***********************************************************************************************************************
+// Another Attempt- getting picture box but no image display. ***********************************************************************************************************************
 
-const myContainer = document.getElementById("container");
-const btn = document.getElementById("btn");
-const url =
-  "https://api.artic.edu/api/v1/artworks?fields=id,title,artist_display,date";
+// const myContainer = document.getElementById("container");
+// const btn = document.getElementById("btn");
+// const url =
+//   "https://api.artic.edu/api/v1/artworks?fields=id,title,artist_display,date";
 
-let getContainer = () => {
-  fetch(url)
-    .then((data) => data.json())
-    .then((response) => {
-      const artwork = response.data[0];
-      const id = artwork.id;
-      const title = title.id;
-      const artist = artwork.artist_display;
-      const date = artwork.date;
-      const imageId = artwork.image_id;
-      const imageUrl = `https://www.artic.edu/iiif/2/${200385}/full/843,/0/default.jpg`;
-      myContainer.innerHTML = `<img src="${"URI"}" alt="${"The Muzzle of the Country"}" />`;
-      myContainer.innerHTML = `ID: ${200385}, Title: ${"The Muzzle of the Country"}, Artist: ${"Albert Gleizes"}, Date: ${1920}`;
-    })
+// let getContainer = () => {
+//   fetch(url)
+//     .then((data) => data.json())
+//     .then((response) => {
+//       const artwork = response.data[0];
+//       const id = artwork.id;
+//       const title = title.id;
+//       const artist = artwork.artist_display;
+//       const date = artwork.date;
+//       const imageId = artwork.image_id;
+//       const imageUrl = `https://www.artic.edu/iiif/2/${200385}/full/843,/0/default.jpg`;
+//       myContainer.innerHTML = `<img src="${"URI"}" alt="${"The Muzzle of the Country"}" />`;
+//       myContainer.innerHTML = `ID: ${200385}, Title: ${"The Muzzle of the Country"}, Artist: ${"Albert Gleizes"}, Date: ${1920}`;
+//     })
 
-    .catch((error) => {
-      console.log("Error fetching data:", error);
-      myContainer.textContent = "Henry what is this about!?!! Hahaha";
-    });
-};
+//     .catch((error) => {
+//       console.log("Error fetching data:", error);
+//       myContainer.textContent = "Henry what is this about!?!! Hahaha";
+//     });
+// };
 
-btn.addEventListener("click", getContainer);
+// btn.addEventListener("click", getContainer);
