@@ -24,12 +24,12 @@ async function fetchArtist() {
 }
 
 fetchArtist();
-
+https://api.quotable.io/quotes?author=
 dropdown.addEventListener('change', (evt) => {
   async function getArtistInfo() {
     try {
       const response = await fetch(
-        `https://api.artic.edu/api/v1/artworks?fields=id,title,artist_display,date_display,main_reference_number
+        `https://api.artic.edu/api/v1/artists?page=2&limit=10
         ${evt.target.value}`
       );
       const data = await response.json();
@@ -41,7 +41,7 @@ dropdown.addEventListener('change', (evt) => {
   getArtistInfo();
 });
 
-function populateDescription(quotes) {
+function populateDescription(description) {
   descriptionContainer.innerHTML = '';
 
   if (description.length < 1) {
